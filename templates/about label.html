@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- logo web -->
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../static/style.css" />
+
+    <title>Hijacker</title>
+    <style>
+      #more {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'includes/header.html' %}
+    <!-- Jumbotron -->
+    <section id="label">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 style="font-family: Algerian; color: rgb(255, 255, 255)" 
+            data-aos="fade-down" data-aos-duration="1800"><br />About Personil</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card text-white bg-dark"data-aos="fade-down" data-aos-duration="1800">
+              <img
+                src="/static/vocalist.jpg"
+                class="card-img-top"
+                alt="vocalist"
+                style="width: 50%"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+              />
+              <div
+                class="card-body"
+                style="text-align: justify"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+              >
+                <p class="card-text">
+                  W. Axl Rose (terlahir dengan nama William Bruce Rose, Jr.) di Lafayette, Indiana
+                  tanggal 6 Februari 1962. Axl Rose adalah musisi Amerika yang terkenal sebagai
+                  pentolan grup musik Guns N' Roses.<span id="dots">...</span
+                  ><span id="more">
+                    Kehidupan masa kecilnya tidak membahagiakan. Axl Rose mengalami pelecehan
+                    seksual, baik oleh ayah kandungnya (yang meninggalkan rumah saat Axl Rose
+                    berusia 2 tahun) dan juga ayah tirinya. Axl Rose memulai karir bermusiknya
+                    dengan bergabung dengan berbagai band antara lain, Rapidfire, Rose, L.A. Guns
+                    dan Hollywood Rose. Sampai akhirnya bersama Tracii Guns, temannya di band L.A.
+                    Guns, membentuk Guns N' Roses bulan Maret 1985. Ketenaran dan masalah selalu
+                    menyertai perjalanan Axl Rose sebagai vokalis Guns N' Roses. Tak seperti
+                    sebagian besar anggota Guns N' Roses, Axl Rose bukan pengguna obat-obatan
+                    terlarang. Meskipun demikian, Axl Rose adalah seorang alkoholik, dan sering
+                    mendapat masalah akibat kebiasaannya tersebut.</span
+                  >
+                </p>
+                <button onclick="myFunction()" id="mybtn">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-white bg-dark" data-aos="fade-down" data-aos-duration="1800">
+              <img src="/static/deni.jpeg" class="card-img-top" alt="Deni" style="width: 50%" data-aos="zoom-in"
+              data-aos-duration="1000"/>
+              <div class="card-body" style="text-align: justify" data-aos="zoom-in"
+              data-aos-duration="1000">
+                <p class="card-text">
+                  pertama-tama kenalin nama gue Deni Alviansyah,biasa dipanggil Deni, Gue orang nya
+                  itu Introvert tapi bukan yang Introvert banget,gue juga ga selalu<span id="dots"
+                    >...</span
+                  ><span id="more">
+                    butuh waktu lama untuk beradaptasi. Gue bukan dari keluarga pemusik,Didalam
+                    keluarga gue juga satu-satunya yang menjadikan musik itu sebagai profesi yaitu
+                    musisi. Gue juga salah satu pendiri Band Hijacker Posisi gue di hijacker sebagai
+                    lead gitar, gue mulai bermain gitar pada saat duduk di bangku sekolah menengah
+                    pertama atau smp. Genre yang sering gue mainin adalah rock,slow rock,alternative
+                    rock dan blues. Band yang paling gue panutin banget adalah Guns N Roses dan
+                    gitaris yang gue panutin banget adalah Slash. Gue juga mendalami teknik nya
+                    slash,gue juga sering dengerin musik-musiknya. Selain itu gue juga dengerin
+                    musik lain contohnya Led Zeppelin,Skid Row, Muse, Stevie Ray Vaughan dan masih
+                    banyak lagi, dan pastinya musik lokal gue juga dengerin. Itu aja,Gue apresiasi
+                    perhatian kalian. Terima kasih.</span
+                  >
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-white bg-dark" data-aos="fade-down" data-aos-duration="1800">
+              <img src="/static/paco.jpeg" class="card-img-top" alt="paco" style="width: 50%" data-aos="zoom-in"
+              data-aos-duration="1200"/>
+              <div class="card-body" style="text-align: justify" data-aos="zoom-in"
+              data-aos-duration="1200">
+                <p class="card-text">
+                  Nama gue Bagus nur alief biasa di panggil Pacooo atau Albert John alief peter, gue
+                  bergabung di band hijacker thn 2019, genre yang suka gue mainin<span id="dots"
+                    >...</span
+                  ><span id="more">
+                    yaitu blues, blues rock, slow rock, rock n roll dan sedikit neo soul. Dan
+                    gitaris yang sering gue dengerin ada BB king, king fish,SRV,Jimi Hendrix,joe
+                    bonamassa, John mayer,Gary more,Carlos santana,Slash, Steve vai,Paul Gilbert,
+                    Eric Steckel, Eric clapton, Eric Gales, Jason backer, jude smith, andre nuth,
+                    dan sedikit terobsesi untuk menguasai semua teknik nya paul gilbert. Gue
+                    kelahiran Jakarta 30 april 2001 dan gue juga seorang seniman sama seperti bokap
+                    gue, selain Antusias terhadap musik gue juga kadang suka melukis ala jean
+                    michael basquiat di jaket yang gue punya, gue juga sedikit pemalu dan sedikit
+                    introvert tapi kadang suka ekstrovert kalo ketemu circle atau orng yang pas.
+                    Visi misi gue di musik adalah mengejar impian gue untuk jadi pemusik papan atas,
+                    band papan atas sekaligus pencipta lagu dan pembuat aransemen musik rock, rock n
+                    roll dan blues rock.</span
+                  >
+                </p>
+                <button onclick="myFunction()" id="mybtn">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-white bg-dark" data-aos="fade-down" data-aos-duration="1800">
+              <img src="/static/akbar.jpeg" class="card-img-top" alt="akbar" style="width: 40%" data-aos="zoom-in"
+              data-aos-duration="1400"/>
+              <div class="card-body" style="text-align: justify" data-aos="zoom-in"
+              data-aos-duration="1400">
+                <p class="card-text">
+                  nama gua akbar alias 'Muhammad akbar' gua basis dari band hijacker dan inspirasi
+                  gua main bass dari suatu musisi band muse dan lagu yang genrenya blues, rock
+                  mungkin banyak lagu yg gua<span id="dots">...</span
+                  ><span id="more">
+                    suka itu dari album-album lawas atau mungkin nggak begitu banyak orang yang tau
+                    lagu itu tapi gua suka,bukan familiar nya tapi dari cara bermainnya yang diatas
+                    rata" dari apa yg gua suka.</span
+                  >
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card text-white bg-dark" data-aos="fade-down" data-aos-duration="1800">
+              <img src="/static/rangga.jpeg" class="card-img-top" alt="rangga" style="width: 50%" data-aos="zoom-in"
+              data-aos-duration="1600"/>
+              <div class="card-body" style="text-align: justify" data-aos="zoom-in"
+              data-aos-duration="1600">
+                <p class="card-text">
+                  Hai kenalin nama gue Rangga Akbar, gue biasa dipanggil Rangga.Gue juga salah satu
+                  pendiri Band Hijacker. Gue suka musik karna hobi gue dari kecil yang doyan banget
+                  dengerin lagu, kebetulan orang tua gue juga punya hobi yang sama,<span id="dots"
+                    >...</span
+                  ><span id="more">
+                    menurut gue musik itu lebih dari sekedar hobi, musik dan lagu itu bisa mewakili
+                    perasaan yang sedang gue rasain dan yang gabisa gue ungkapkan pake kata-kata.
+                    dari kecil gue suka banget sama drum karna itu gue juga punya panutan seperti
+                    the rev,john bonham, steven adler,dan masih banyak lagi deh, ohiya genre yg gue
+                    suka gue mainin itu blues,blues rock,classic rock,rock alternatif, tapi ga
+                    jarang juga gue dengerin musik lokal karna musik menurut gue punya artinya
+                    masing-masing, gue pengen banget sukses di hobi gue ini, iya di dunia musik, itu
+                    jadi kebanggaan tersendiri buat gue karna bisa sukses di hobi gue sendiri, gue
+                    orangnya ekstrovert dan gampang banget beradaptasi sama orang2 jadi kalo kalian
+                    mau kenal gue lebih lanjut bisa nongkrong bareng mungkin haha, itu ajasih pesan
+                    singkat dari gue, see u.</span
+                  >
+                </p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Jumbotron -->
+    <!-- Icon -->
+
+    <!-- Akhir Icon -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="static/readmore.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

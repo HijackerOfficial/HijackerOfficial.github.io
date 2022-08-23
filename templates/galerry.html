@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- logo web -->
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- MY CSS -->
+    <!-- <link rel="stylesheet" href="../static/style.css" />
+    <link rel="stylesheet" href="../static/reset.css" /> -->
+    <link rel="stylesheet" href="/static/gallery.css" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/style1.css" rel="stylesheet" />
+  </head>
+
+    <title>Hijacker</title>
+  </head>
+  <body id="fog">
+    {% include 'includes/header.html' %}
+    <!-- Jumbotron -->
+    <section id="galerry" data-aos="fade-down" data-aos-duration="1800">
+    <!-- <div class="container1" id="linkgallry">
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="#">
+              <span class="icon"><ion-icon name="images"></ion-icon></span>
+              <span class="text" style="font-family: algerian; color: black;">Photos</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"><ion-icon name="videocam"></ion-icon></span>
+              <span class="text" style="font-family: algerian;color: black;">Video</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"><ion-icon name="musical-notes"></ion-icon></span>
+              <span class="text" style="font-family: algerian;color: black;">Album</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div> -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbargallery">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="font-family: Algerian">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="font-family: Algerian">Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="font-family: Algerian">Album</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <!-- <input type="radio" name="photos" id="check1" checked style="display: none" />
+      <input type="radio" name="photos" id="check2" checked style="display: none" />
+      <input type="radio" name="photos" id="check3" checked style="display: none" />
+      <input type="radio" name="photos" id="check4" checked style="display: none" />
+
+      <div class="galleryfoto">
+        <h1 style="color: white; font-family: Algerian" id="h1gallery">Galerry</h1>
+        <div class="top-content mx-auto">
+          <label for="check1" style="font-family: Algerian" id="label">Photos</label>
+          <label for="check1" style="font-family: Algerian" id="label">Video</label>
+          <label for="check1" style="font-family: Algerian" id="label">Album</label>
+        </div> -->
+        <!-- Gallery Start -->
+        <div
+          class="container-fluid bg-gallery"
+          id="gallery"
+          style="padding: 120px 0; margin: 90px 0"
+        >
+          <div class="section-title position-relative text-center" style="margin-bottom: 120px">
+            <h1 style="font-family: algerian; color:white">gallery</h1>
+            <h6 class="text-uppercase text-white mb-3" style="letter-spacing: 3px;font-family: Algerian">2022 IN STUDIO</h6>
+            <!-- <h1 class="font-secondary display-4 text-white" >Our Photo Gallery</h1> -->
+            <i class="far fa-heart text-white"></i>
+          </div>
+          <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image1.jpeg" alt="" />
+              <a href="/static/imggallery/image1.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image2.jpeg" alt="" />
+              <a href="/static/imggallery/image2.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image3.jpeg" alt="" />
+              <a href="/static/imggallery/image3.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image4.jpeg" alt="" />
+              <a href="/static/imggallery/image4.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image5.jpeg" alt="" />
+              <a href="/static/imggallery/image5.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image6.jpeg" alt="" />
+              <a href="/static/imggallery/image6.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-fluid bg-gallery"
+          id="gallery"
+          style="padding: 120px 0; margin: 90px 0"
+        >
+          <div class="section-title position-relative text-center" style="margin-bottom: 120px">
+            <h1 style="font-family: algerian; color:white">gallery</h1>
+            <h6 class="text-uppercase text-white mb-3" style="letter-spacing: 3px;font-family: Algerian">2022</h6>
+            <!-- <h1 class="font-secondary display-4 text-white" >Our Photo Gallery</h1> -->
+            <i class="far fa-heart text-white"></i>
+          </div>
+          <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image9.jpeg" alt="" />
+              <a href="/static/imggallery/image9.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image10.jpeg" alt="" />
+              <a href="/static/imggallery/image10.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image11.jpeg" alt="" />
+              <a href="/static/imggallery/image11.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image9.jpeg" alt="" />
+              <a href="/static/imggallery/image9.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image10.jpeg" alt="" />
+              <a href="/static/imggallery/image10.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image11.jpeg" alt="" />
+              <a href="/static/imggallery/image11.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-fluid bg-gallery"
+          id="gallery"
+          style="padding: 120px 0; margin: 90px 0"
+        >
+          <div class="section-title position-relative text-center" style="margin-bottom: 120px">
+            <h1 style="font-family: algerian; color:white">gallery</h1>
+            <h6 class="text-uppercase text-white mb-3" style="letter-spacing: 3px;font-family: Algerian">2022 LIVE IN BIGBEN COFFE</h6>
+            <!-- <h1 class="font-secondary display-4 text-white" >Our Photo Gallery</h1> -->
+            <i class="far fa-heart text-white"></i>
+          </div>
+          <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image12.jpeg" alt="" />
+              <a href="/static/imggallery/image12.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image13.jpeg" alt="" />
+              <a href="/static/imggallery/image13.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image14.jpeg" alt="" />
+              <a href="/static/imggallery/image14.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image15.jpeg" alt="" />
+              <a href="/static/imggallery/image15.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image12.jpeg" alt="" />
+              <a href="/static/imggallery/image12.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image13.jpeg" alt="" />
+              <a href="/static/imggallery/image13.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image14.jpeg" alt="" />
+              <a href="/static/imggallery/image14.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="gallery-item">
+              <img class="img-fluid w-100" src="/static/imggallery/image15.jpeg" alt="" />
+              <a href="/static/imggallery/image15.jpeg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery End -->
+
+        <!-- <div class="containergalleryimg">
+          <h2 style="color: white; font-family: Algerian">2022 In Studio</h2>
+          <ul class="gallery">
+            <li>
+              <a href="">
+                <img src="/static/tumb/image1.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/tumb/image2.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/tumb/image3.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/tumb/image4.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/tumb/image5.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/tumb/image6.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/tumb/image7.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/static/tumb/image8.png" alt="" />
+                <span></span>
+              </a>
+            </li>
+            <div class="clear"></div>
+          </ul>
+        </div> -->
+      </div>
+
+      <!-- <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2
+              style="font-family: Algerian; color: rgb(255, 255, 255)"
+              data-aos="fade-down"
+              data-aos-duration="1800"
+            >
+              <br />Galerry
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="amp-box">
+                <h3 class="amp1" style="font-family: Algerian; color: #fff">contoh1</h3>
+                <img src="/static/jcm900.png" alt="marshall" class="jcm900-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="galeri">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2
+              style="font-family: Algerian; color: rgb(255, 255, 255)"
+              data-aos="fade-down"
+              data-aos-duration="1800"
+            >
+              <br />Galerry
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="cmb-box">
+                <h3 class="marsahlcmb2" style="font-family: Algerian; color: #fff">contoh2</h3>
+                <img src="/static/marshallcmb.jpg" alt="marshall" class="marshallcmb-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <!-- Akhir Jumbotron -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script>
+      VANTA.FOG({
+        el: "#fog",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        highlightColor: 0x373737,
+        midtoneColor: 0x2d2d2d,
+        lowlightColor: 0x373737,
+        baseColor: 0x0,
+      });
+    </script>
+
+    <!-- icon link gallery -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+      const list = document.querySelectorAll('.list');
+      function activeLink(){
+        list.forEach ((item) =>
+        item.classList.remove('active'));
+        this.classList.add('active');
+      }
+      list.forEach((item)=>
+      item.addEventListener('click',activeLink));
+    </script> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+       <!-- Scroll to Bottom -->
+       <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+       <!-- Back to Top -->
+       <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"
+         ><i class="fa fa-angle-double-up"></i
+       ></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="/static/lib/easing/easing.min.js"></script>
+        <script src="/static/lib/waypoints/waypoints.min.js"></script>
+        <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="/static/lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
+    
+        <!-- Template Javascript -->
+        <script src="/static/js/main.js"></script>
+    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript" src="/static/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".amp-box"), {
+        max: 25,
+        speed: 400,
+      });
+    </script> -->
+  </body>
+</html>
